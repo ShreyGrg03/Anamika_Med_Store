@@ -53,7 +53,7 @@ const InvoiceForm = () => {
           taxAmount: "0.00",
           discountRate: "",
           discountAmount: "0.00",
-          currency: "$",
+          currency: "₹",
           items: [
             {
               itemId: 0,
@@ -413,6 +413,7 @@ const InvoiceForm = () => {
                 className="btn btn-light my-1"
                 aria-label="Change Currency"
               >
+                <option value="₹">INR (Indian National Rupees)</option>
                 <option value="$">USD (United States Dollar)</option>
                 <option value="£">GBP (British Pound Sterling)</option>
                 <option value="¥">JPY (Japanese Yen)</option>
